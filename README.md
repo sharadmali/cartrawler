@@ -33,7 +33,6 @@ src/test/java:
 **Global Class**: Contains constants that will be used globally in the framework.
 **Report Class**: It's responsible for generating the Extent report.
 **ExcelUtility Class**: Reading the test cases from excel sheet (path: TestArtifacts/GroupControlFile.xlsx).
-
 **CarDetails_Test Class**: It contains the actual test case to test the application functions.
 **Controller Class**: It's responsible for reading the test cases from the excel sheet (Path:TestArtifacts/GroupControlFile.xlsx), generating the TestNG XML file at runtime, and running it. Using this class, we can execute the test cases from Jenkins.
  **Base Class**: Contains the BeforeTest, AfterTest, BeforeMethod, AfterMethod, DataProvider, and it's responsible for calling the methods for generating the Extend report and providing the test data to the test cases that are extended by test case class.
