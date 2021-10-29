@@ -15,13 +15,13 @@ Folder structure
 ```sh
 src/main/java:
     - CommonUtilityApplication.java
-    - Base.java
     - ExcelUtility.java
 	- Global.java
 	- Report.java
 src/test/java:
     - CarDetails_Test.java
     - Controller.java
+    - Base.java
 ```
  **CommonUtilityApplication Class**: Contains below application functions as requested in the assignment:
  - **getCheapestCarByType**: Return cheapest options of each car type· 
@@ -29,14 +29,15 @@ src/test/java:
 - **sortbyCorporate**: Return the sorted data by corporates or venders· 
 - **sortWithinGroupbyPrice**: Sort low-to-high price within each group by passing vendor name
 
- **Base Class**: Contains the BeforeTest, AfterTest, BeforeMethod, AfterMethod, DataProvider, and it's responsible for calling the methods for generating the Extend report and providing the test data to the test cases that are extended by test case class.
+
 **Global Class**: Contains constants that will be used globally in the framework.
 **Report Class**: It's responsible for generating the Extent report.
 **ExcelUtility Class**: Reading the test cases from excel sheet (path: TestArtifacts/GroupControlFile.xlsx).
 
 **CarDetails_Test Class**: It contains the actual test case to test the application functions.
 **Controller Class**: It's responsible for reading the test cases from the excel sheet (Path:TestArtifacts/GroupControlFile.xlsx), generating the TestNG XML file at runtime, and running it. Using this class, we can execute the test cases from Jenkins.
-
+ **Base Class**: Contains the BeforeTest, AfterTest, BeforeMethod, AfterMethod, DataProvider, and it's responsible for calling the methods for generating the Extend report and providing the test data to the test cases that are extended by test case class.
+ 
 ## Test Execution
 For executing the test case, we have two options:
 1. Execute the testing.xml file (Have mentioned all the test cases here to be executed)
