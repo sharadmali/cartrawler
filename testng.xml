@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CarTrawler Automation project">
+<parameter name ="" value =""/>
+  <test thread-count="4" name="Car">
+    <classes>
+     
+      <class name="com.car.testcases.CarDetails_Test">
+        <methods>
+          <include name="verifyCheapestCarType"/>
+          <include name="verifyFilterByCarType"/>
+          <include name="verifySortByCorporate"/>
+          <include name="verifySortWithinGroupbyPrice"/>
+        </methods>
+      </class>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
