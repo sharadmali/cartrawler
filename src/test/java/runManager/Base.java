@@ -1,4 +1,4 @@
-package lib;
+package runManager;
 
 import java.lang.reflect.Method;
 import org.testng.ITestContext;
@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import com.codoid.products.exception.FilloException;
+import lib.Global;
+import lib.Report;
 
 public class Base {
 
