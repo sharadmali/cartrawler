@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
-import lib.Base;
+import runManager.Base;
 import lib.CommonUtilityApplication;
 import lib.Report;
 
